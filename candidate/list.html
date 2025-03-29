@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>แสดงผู้สมัครเลือกตั้ง</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(#ffc6a5,#ffb091);
+    }
+  
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background-color: #ffc6a5,#ffb091;
+      border-radius: 12px;
+      padding: 30px;
+      width: 100vw;
+      height: 100vh;
+      overflow-y: auto;
+
+    }
+
+    h2 {
+      margin-bottom: 25px;
+      font-size: 1.5rem;
+      color: #333;
+      text-align: center;
+    }
+
+    .candidate {
+      display: flex;
+      align-items: flex-start;
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 15px;
+      background-color: #fafafa;
+    }
+
+    .candidate img {
+      width: 300px;
+      height: 300px;
+      border-radius: 20%;
+      margin-right: 15px;
+    }
+    .details{
+      padding-top: 40px;
+      justify-content: center;
+    }
+    .details p {
+      padding-top: 5px;
+      margin: 5px 0;
+      margin-left: 30px;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    .finish-button {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .finish-button button {
+      background-color: #b2f2bb;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .finish-button button:hover {
+      background-color: #94e6a8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>List of Candidate </h2>
+
+    <div class="candidate">
+      <img src="C1.png" alt="ผู้สมัคร 1" />
+      <div class="details">
+        <p>candidate 1</p>
+        <p>เลขพรรค : 1</p>
+        <p><strong>ชื่อ:</strong> Napat Mao</p>
+        <p>นโยบาย: พัฒนาชุมชน สร้างงาน สร้างรายได้</p>
+      </div>
+    </div>
+
+    <div class="candidate">
+      <img src="C2.png" alt="ผู้สมัคร 2" />
+      <div class="details">
+        <p>candidate 2</p>
+        <p>เลขพรรค : 2</p>
+        <p><strong>ชื่อ:</strong> Annie landies</p>
+        <p>นโยบาย: ส่งเสริมการศึกษา เด็กไทยก้าวไกล</p>
+      </div>
+    </div>
+
+    <div class="candidate">
+      <img src="c3.png" alt="ผู้สมัคร 3" />
+      <div class="details">
+        <p>candidate 3</p>
+        <p>เลขพรรค : 4</p>
+        <p><strong>ชื่อ:</strong> Silverr</p>
+        <p>นโยบาย: สุขภาพดีถ้วนหน้า ทั่วถึงทุกคน</p>
+      </div>
+    </div>
+
+    <div class="finish-button">
+      <button>Finish</button>
+    </div>
+  </div>
+</body>
+</html>
